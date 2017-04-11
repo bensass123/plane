@@ -513,7 +513,7 @@ var Pilot = function(){
 
 	// Hair element
 	var hairGeom = new THREE.BoxGeometry(4,8,4);
-	var hairMat = new THREE.MeshLambertMaterial({color:Colors.brown});
+	var hairMat = new THREE.MeshLambertMaterial({color:Colors.brownDark});
 	var hair = new THREE.Mesh(hairGeom, hairMat);
 	// Align the shape of the hair to its bottom boundary, that will make it easier to scale.
 	hair.geometry.applyMatrix(new THREE.Matrix4().makeTranslation(0,2,0));
@@ -560,7 +560,7 @@ var Pilot = function(){
 	this.mesh.add(hairs);
 
 	var glassGeom = new THREE.BoxGeometry(5,5,5);
-	var glassMat = new THREE.MeshLambertMaterial({color:Colors.brown});
+	var glassMat = new THREE.MeshLambertMaterial({color: 0x4d0000});
 	var glassR = new THREE.Mesh(glassGeom,glassMat);
 	glassR.position.set(6,0,3);
 	var glassL = glassR.clone();
